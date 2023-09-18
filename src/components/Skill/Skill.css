@@ -1,0 +1,21 @@
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.progress-bar {
+  height: 20px;
+  /* background: linear-gradient(to right, rgb(38, 13, 51), rgb(160, 32, 240), rgb(6, 2, 8), rgb(160, 32, 240), rgb(6, 2, 8)); */
+  border-radius: 9px;
+  position: relative;
+}
+
+.progress-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}

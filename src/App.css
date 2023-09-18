@@ -1,0 +1,49 @@
+html body {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.tab-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1px; /* Agrega un margen negativo para superponer el borde inferior del tab-content */
+}
+
+.tab-list li {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid rgb(160, 32, 240);
+  border-radius: 5px 5px 0 0;
+  margin-right: 5px;
+  background-color: #f2f2f2;  
+}
+
+.tab-list li.active {
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px 15% 20px 15%;
+  border: 1px solid rgb(160, 32, 240);
+  border-radius: 10px;
+  background-color: #fff;
+  margin-top: -1px; 
+  box-shadow: -.25px -.25px 0 rgb(160, 32, 240),
+  .25px .25px 0 rgb(160, 32, 240),
+  0 0 10px rgb(160, 32, 240),
+  0 0 20px rgb(160, 32, 240),
+  0 0 40px rgb(160, 32, 240);
+}
+
+.banner {
+  width: 100%;
+}

@@ -1,0 +1,38 @@
+.info-pro {
+    display: flex;
+}
+
+.img-pro {
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.container-pro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.card-pro-container {
+    margin: 15%;
+    margin-top: 5%;
+    border: 1px solid rgb(160, 32, 240);
+    border-radius: 15px;
+    padding: 0;
+    box-shadow: -.25px -.25px 0 rgb(160, 32, 240),
+        .25px .25px 0 rgb(160, 32, 240),
+        0 0 10px rgb(160, 32, 240),
+        0 0 20px rgb(160, 32, 240),
+        0 0 40px rgb(160, 32, 240);
+}
+
+.data-pro {
+    flex-direction: column;
+}
+
+h1 {
+    margin: 10px;
+}
