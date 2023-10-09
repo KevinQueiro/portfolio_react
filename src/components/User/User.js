@@ -12,19 +12,19 @@ const User = ({ props }) => {
         </div>
       </div>
       <div className='info-container row'>
-        <div>
+        <div className='each-info'>
           Nombre:
           <div>{capitalLeter(props.name)} {capitalLeter(props.lastname)}</div>
         </div>
-        <div>
+        <div className='each-info'>
           Titulo:
           <div>{capitalLeter(props.title)}</div>
         </div>
-        <div>
+        <div className='each-info'>
           Fecha de Nacimiento:
           <div>{fecha(props.birthdate)}</div>
         </div>
-        <div>
+        <div className='each-info'>
           Residencia:
           <div>Tigre, Buenos Aires, Argentina</div>
         </div>

@@ -1,0 +1,18 @@
+.edu-form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.form-input{
+    width: 100%;
+    appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid rgb(160, 32, 240);
+	background: rgba(rgb(160, 32, 240), .2);
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: rgb(160, 32, 240);
+    text-align: center;
+}
