@@ -1,6 +1,8 @@
+const BASE_URL = 'https://kevin-queiro.cyclic.cloud'
 export const fetchData = async () => {
   try {
-    const response = await fetch('http://localhost:4000/');
+    console.log('url', BASE_URL);
+    const response = await fetch(`${BASE_URL}`);
     const data = await response.json();
     return data[0];
   } catch (error) {
@@ -10,7 +12,7 @@ export const fetchData = async () => {
 
 export const updateApi = async (userId, idToUpdate, what, data, forRefresh, forClose) => {
   try {
-    const respose = await fetch(`http://localhost:4000/update/${what}/${userId}/${idToUpdate}`, {
+    const respose = await fetch(`${BASE_URL}/update/${what}/${userId}/${idToUpdate}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -30,7 +32,7 @@ export const updateApi = async (userId, idToUpdate, what, data, forRefresh, forC
 
 export const deleteApi = async (userId, idToDelete, what, data, forRefresh) => {
   try {
-    const respose = await fetch(`http://localhost:4000/delete/${what}/${userId}/${idToDelete}`, {
+    const respose = await fetch(`${BASE_URL}/delete/${what}/${userId}/${idToDelete}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +51,7 @@ export const deleteApi = async (userId, idToDelete, what, data, forRefresh) => {
 
 export const newApi = async (userId, what, data, forRefresh, forClose) => {
   try {
-    const respose = await fetch(`http://localhost:4000/new/${what}/${userId}`, {
+    const respose = await fetch(`${BASE_URL}/new/${what}/${userId}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -69,7 +71,7 @@ export const newApi = async (userId, what, data, forRefresh, forClose) => {
 
 export const getComments = async () => {
   try {
-    const response = await fetch('http://localhost:4000/comments');
+    const response = await fetch(`${BASE_URL}/comments`);
     const data = await response.json();
     return data.reverse()
   } catch (error) {
@@ -79,7 +81,7 @@ export const getComments = async () => {
 
 export const newComment = async (data, forRefresh) => {
   try {
-    const respose = await fetch(`http://localhost:4000/comments/new`, {
+    const respose = await fetch(`${BASE_URL}/comments/new`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
