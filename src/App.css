@@ -4,7 +4,7 @@ html body {
 
 .App {
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif !important; 
 }
 
 .tab-list {
