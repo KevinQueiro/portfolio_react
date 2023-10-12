@@ -14,6 +14,10 @@ const Education = ({ props }) => {
     setIsNew(!isNew);
   };
 
+  const handleImageError = (event) => {
+    event.target.src = '/defaultImg.png';
+  };
+
   return (
     <div>
       {props.data.map((prop) =>
@@ -21,7 +25,7 @@ const Education = ({ props }) => {
           <h1>{capitalLeter(prop.name)}</h1>
           <div key={prop._id} className='info-edu'>
             <div className='container-edu'>
-              <img className='img-edu' src={prop.photo} alt='photoedu' />
+              <img className='img-edu' src={prop.photo || '/defaultImg.png'} alt='photoedu' onError={handleImageError} />
             </div>
             <div className='container-edu data-edu'>
               <div>{capitalLeter(prop.description)}</div>

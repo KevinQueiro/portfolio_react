@@ -4,11 +4,16 @@ import fecha from '../../utils/fecha.js'
 import './User.css'
 
 const User = ({ props }) => {
+
+  const handleImageError = (event) => {
+    event.target.src = '/defaultAvatar.png';
+  };
+
   return (
     <div className='userInfo'>
       <div className='img-container'>
         <div className='avatar-container'>
-          <img className='avatar' src={props.photo} alt='portrait' />
+          <img className='avatar' src={props.photo || '/defaultAvatar.png'} alt='portrait' onError={handleImageError}/>
         </div>
       </div>
       <div className='info-container row'>

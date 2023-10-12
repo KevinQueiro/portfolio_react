@@ -13,6 +13,10 @@ const Projects = ({ props }) => {
     setIsNew(!isNew);
   };
 
+  const handleImageError = (event) => {
+    event.target.src = '/defaultImg.png';
+  };
+
   return (
     <div>
       {props.data.map((prop) =>
@@ -20,7 +24,7 @@ const Projects = ({ props }) => {
           <h1>{capitalLeter(prop.name)}</h1>
           <div key={prop._id} className='info-pro'>
             <div className='container-pro'>
-              <img className='img-pro' src={prop.photo} alt='photoexp' />
+              <img className='img-pro' src={prop.photo || '/defaultImg.png'} alt='photoexp' onError={handleImageError} />
             </div>
             <div className='container-pro data-pro'>
               <div>{capitalLeter(prop.description)}</div>
