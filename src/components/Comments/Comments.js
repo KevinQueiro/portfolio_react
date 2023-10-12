@@ -47,7 +47,7 @@ const Comments = () => {
     e.preventDefault()
     newComment(form, forRefreshComments)
     setForm({
-      name: '',
+      cname: '',
       comment: ''
     })
   }
@@ -61,7 +61,7 @@ const Comments = () => {
               <h2>Deja tu comentario:</h2>
               <form className='formComment'>
                 <label htmlFor='cname' className='labelComment'>Nombre
-                  <input className='text' type='text' value={form.name} id='cname' name='cname' onChange={handleInputChange} />
+                  <input className='text' type='text' value={form.cname} id='cname' name='cname' onChange={handleInputChange} />
                 </label>
                 <label htmlFor='comment' className='labelComment'>Comentario
                   <textarea className='text' type='text' value={form.comment} id='comment' name='comment' rows={rows} cols={30} onChange={handleInputChange} />
