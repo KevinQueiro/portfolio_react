@@ -6,7 +6,7 @@ const CommentCard = ({ props }) => {
 
     return (
         <div className="CommentCard">
-            <div className="name">{props.name}</div>
+            <div className="name">{props.cname}</div>
             <div className="createdAt">{fecha(props.createdAt)}</div>
             <div className="comment">{props.comment}</div>
         </div>
