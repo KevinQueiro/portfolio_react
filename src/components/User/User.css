@@ -50,8 +50,55 @@
     border: 1px solid rgb(160, 32, 240);
     border-radius: 5px;
     box-shadow: -.25px -.25px 0 rgb(160, 32, 240),
-  .25px .25px 0 rgb(160, 32, 240),
-  0 0 10px rgb(160, 32, 240),
-  0 0 20px rgb(160, 32, 240),
-  0 0 40px rgb(160, 32, 240);
+        .25px .25px 0 rgb(160, 32, 240),
+        0 0 10px rgb(160, 32, 240),
+        0 0 20px rgb(160, 32, 240),
+        0 0 40px rgb(160, 32, 240);
+}
+
+@media (max-width: 768px) {
+    .userInfo {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .img-container {
+        width: 40%;
+    }
+
+    .avatar-container {
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    .avatar {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info-container {
+        margin-top: 15px;
+        align-items: center;
+    }
+
+    .each-info {
+        margin-right: 0;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .info-container.row {
+        flex-direction: column;
+        /* Cambia la dirección a columna en dispositivos móviles */
+    }
+
+    .info-container.row>div {
+        margin-right: 0;
+        /* Elimina el margen derecho en dispositivos móviles */
+        margin-bottom: 10px;
+        /* Agrega margen inferior entre las secciones de información en dispositivos móviles */
+        text-align: center;
+        /* Centra el texto en dispositivos móviles */
+    }
 }

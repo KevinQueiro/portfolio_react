@@ -42,7 +42,7 @@ const EducationForm = ({ props }) => {
                 Opciones
             </button>
             {isOpen && (
-                <div>
+                <div className='options-container'>
                     <button className="dropdown-button" name='edit' onClick={toggleDropdown}>
                         Editar
                     </button>

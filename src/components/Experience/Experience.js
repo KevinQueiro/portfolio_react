@@ -13,7 +13,7 @@ const Experience = ({ props }) => {
   const toggleDropdown = (e) => {
     setIsNew(!isNew);
   };
-  
+
   const handleImageError = (event) => {
     event.target.src = '/defaultImg.png';
   };
@@ -29,8 +29,7 @@ const Experience = ({ props }) => {
             </div>
             <div className='container-exp data-exp'>
               <div>{capitalLeter(prop.description)}</div>
-              <div>Inicio: {`${fecha(prop.initdate,"mes")}/${fecha(prop.initdate,"año")}`}</div>
-              <div>Fin: {`${fecha(prop.finaldate,"mes")}/${fecha(prop.finaldate,"año")}`}</div> 
+              <div>{`${fecha(prop.initdate, "mes")}/${fecha(prop.initdate, "año")}`} - {`${fecha(prop.finaldate, "mes")}/${fecha(prop.finaldate, "año")}`}</div>
             </div>
           </div>
           <ExperienceForm props={{ data: prop, userId: props.userId, forRefresh: props.forRefresh }} />

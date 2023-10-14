@@ -36,3 +36,33 @@
 h1 {
     margin: 10px;
 }
+
+@media (max-width: 768px) {
+    .card-pro-container {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-pro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .container-pro {
+        width: 80px;
+        height: 80px;
+    }
+
+    .img-pro{
+        width: 100%;
+    }
+
+    .dropdown-button {
+        margin-top: 15px;
+    }
+}

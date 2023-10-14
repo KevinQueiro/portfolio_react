@@ -99,3 +99,22 @@ button:active {
   background-color: #298e46;
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
+
+@media (max-width: 768px) {
+  .App {
+    text-align: left; /* Cambia la alineación del texto para dispositivos móviles */
+  }
+  .tab-list {
+    flex-direction: column; /* Cambia la dirección de la lista de pestañas para dispositivos móviles */
+  }
+  .tab-list li {
+    margin-bottom: 5px;
+    margin-left: 2px;
+  }
+  .tab-content {
+    padding: 20px; /* Ajusta el relleno del contenido de las pestañas para dispositivos móviles */
+  }
+  .banner {
+    height: auto; /* Ajusta la altura de la imagen de banner para que se ajuste automáticamente en dispositivos móviles */
+  }
+}

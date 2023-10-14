@@ -36,3 +36,34 @@
 h1 {
     margin: 10px;
 }
+
+@media (max-width: 768px) {
+    .card-edu-container {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-edu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .container-edu {
+        width: 80px;
+        height: 80px;
+    }
+
+    .img-edu{
+        width: 100%;
+    }
+
+    .dropdown-button {
+        margin-top: 15px;
+        /* Aumenta el espacio entre los elementos en dispositivos móviles */
+    }
+}
