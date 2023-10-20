@@ -52,7 +52,7 @@ function App() {
       content: <Skill props={{data: data?.skills, userId: data?._id, forRefresh}}></Skill>,
     },
   ];
-
+  
   return (
     <div className="App">
       {
