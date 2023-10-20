@@ -1,7 +1,7 @@
-const BASE_URL = 'https://kevin-queiro.cyclic.cloud'
+const BASE_URL = process.env.REACT_APP_API_URL
+
 export const fetchData = async () => {
   try {
-    console.log('url', BASE_URL);
     const response = await fetch(`${BASE_URL}`);
     const data = await response.json();
     return data[0];
