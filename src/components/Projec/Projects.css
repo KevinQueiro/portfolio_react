@@ -21,7 +21,7 @@
     margin-top: 5%;
     border: 1px solid rgb(160, 32, 240);
     border-radius: 15px;
-    padding: 0;
+    padding: 1%;
     box-shadow: -.25px -.25px 0 rgb(160, 32, 240),
         .25px .25px 0 rgb(160, 32, 240),
         0 0 10px rgb(160, 32, 240),
@@ -31,6 +31,7 @@
 
 .data-pro {
     flex-direction: column;
+    padding: 2%;
 }
 
 h1 {
